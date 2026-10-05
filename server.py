@@ -13,7 +13,7 @@ import pytesseract
 VERSION = '0.4.0'
 app = FastAPI(title='MangaPT Server', version=VERSION)
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_methods=['*'], allow_headers=['*'])
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent
 UA = 'MangaPT/0.4 (public-content importer)'
 TIMEOUT = 30.0
 MAX_HTML = 5 * 1024 * 1024
