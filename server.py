@@ -201,17 +201,17 @@ def ocr_image(im: Image.Image, lang='eng'):
 class TranslateRequest(BaseModel):
     text: str
     source: str = 'en'
-    target: str = 'pt-BR'
+    target: str = 'pb'
 
 class BatchTranslateRequest(BaseModel):
     texts: list[str] = Field(default_factory=list)
     source: str = 'en'
-    target: str = 'pt-BR'
+    target: str = 'pb'
 
 class ProcessRequest(BaseModel):
     imageUrl: str
     source: str = 'en'
-    target: str = 'pt-BR'
+    target: str = 'pb'
     render: bool = True
 
 
